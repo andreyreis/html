@@ -14,9 +14,21 @@ function somarValores(){
 	var s2 = document.getElementById("txt2").value;
 	
 	var s3 = parseInt(s1) + parseInt(s2);
-	alert(s3);
-
 	
-
+    document.getElementById('resultado').innerHTML = s3;
 	
 }
+
+function validaForm() {
+	var form = document.getElementById('formulario');
+	
+	alert(form.nome.value +" - "+ form.email.value +" - "+ form.sexo.value +" - "+ form.cargo.value)
+	
+	
+	
+	
+	
+}
+
+
+

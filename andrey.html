@@ -5,9 +5,11 @@
 	</head>
 	
 	<body style="background-color:pink">
-	
+		
 		<script src="js/javascript.js"></script>
-	
+		
+		<a HREF="yerdna.html" TARGET="_blank" > Não clique se não ja era</a>
+		<!--
 		<h1>futebol na china</h1>	
 				
 		<p>Rio de Janeiro</p>
@@ -16,13 +18,13 @@
 	
 		<img src="imagens\200w.gif"></img>
 	
-	
+	     
 		<form action=”login.asp” method=post>
-		 Usuário:<input type=text name=username>
+		 Usuário:<input type=text name=username id=username>
 		 <br>
-		 Senha: <input type=password name=password>
+		 Senha: <input type=password name=password id=password>
 		 <br>
-		 <input type="button" name="botao-ok" value="Ok">
+		 <input type="button" name="botao-ok" value="Entrar">
 		 <input type="reset" value='Limpar todos os campos'/>
 		</form>
 		
@@ -32,11 +34,35 @@
 		Numero 1: <input id="txt1" type=text name=num1><br>
 		Numero 2: <input id="txt2" type=text name=num2><br>
 		<input type="button" name="botao-ok" value="Somar" onclick="somarValores()"><br>
-		Resultado:<input type=text name=resultado>
 		
-		<!--<button onclick="clique_botao();">clique aqui</button>-->
 		
-		 <a HREF="yerdna.html" TARGET="_blank" > Não clique se não ja era</a>
+        Resultado: <div id="resultado"></div>  
+
+		<button onclick="clique_botao();">clique aqui</button>-->
+
+		 
+		 <form id="formulario" name="frmTeste" method="post" action="#irServidor" onsubmit="return validaForm(this);">
+  <p>Preencha seus dados</p>
+  <p>Nome: <input type="text" name="nome" id="nome" /></p>
+  <p>Email: <input type="text" name="email" id="email" /></p>
+  <p>Sexo:
+    <label><input type="radio" name="sexo" value="Orc" id="masc" /> Orc</label>
+   <label><input type="radio" name="sexo" value="Elfo" id="masc" /> Elfo</label>
+   <label><input type="radio" name="sexo" value="Cavaleiro" id="masc" /> Cavaleiro</label>
+   <label><input type="radio" name="sexo" value="Anão" id="masc" /> Anão</label>
+  </p>
+  <p>Profissão
+    <select name="cargo">
+      <option value="Ô IMBECIL">Selecione o cargo</option>
+      <option value="Ferreiro">Ferreiro</option>
+      <option value="Ropeira">Ropeira</option>
+      <option value="Bibliotecário">Bibliotecário</option>
+      <option value="todas">Todas</option>
+   </select>
+  </p><input type="submit" name="sbt" value="Enviar" onclick="validaForm()"/></p>
+</form>
+
+
 	</body>
 
 </html>
