@@ -21,8 +21,14 @@ function somarValores(){
 
 function validaForm() {
 	var form = document.getElementById('formulario');
+	var food = document.getElementsByName('Comidas');
 	
-	alert(form.nome.value +" - "+ form.email.value +" - "+ form.sexo.value +" - "+ form.cargo.value)
+	alert(form.nome.value +" - "
+	+ form.email.value +" - "
+	+ form.sexo.value +" - "
+	+ form.cargo.value +" - "
+	+ food[0].value +" - "
+	)
 	
 	
 	
